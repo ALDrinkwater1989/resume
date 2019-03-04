@@ -11,6 +11,31 @@
     background-color: #fff;
 }
 
+.bg-color-personal-info {
+    background-color: #f4f4f4;
+}
+
+.bg-color-skills{
+    background-color: #ffffff;
+}
+
+.bg-color-work-history{
+    background-color: #9b59b6;
+}
+
+.bg-color-contact{
+    background-color: #ffffff;
+}
+
+.bg-color-conferences{
+    background-color: #fafafa;
+}
+
+.bg-color-groups{
+    background-color: #ffffff;
+}
+
+
 .menu-color-home {
     background-color: #e67e22;
 }
@@ -28,17 +53,21 @@
 }
 
 
-.bg-color-personal-info {
-    background-color: #f4f4f4;
+.menu-color-github{
+    background-color: #1c4a6c;
 }
 
-.bg-color-work-history{
-    background-color: #9b59b6;
+.menu-color-interests{
+    background-color: #e74c3c;
 }
 
-.bg-color-contact{
-    background-color: #ffffff;
+body{
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #525252;
+    color: #555555;
 }
+
 /*---------------------------Special Paddings/margins/text*/
 
 h1,
@@ -176,7 +205,7 @@ header {
 /*---------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 
 }
@@ -404,3 +433,9 @@ button[type="submit"]{
 }
 
 
+/*------------------Map*/
+
+div #Map {
+    min-height: 360px;
+    
+}
