@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rosie Odenkirk</title>
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="Assets/css/style.css" type="text/css" />
     <meta name="Viewport" content="width=device-width, initial scale-1">
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_n491rQEFUsSTtt6OlHDHJ");
+        })();
+    </script>
 
 </head>
 
@@ -18,7 +29,7 @@
                 <div class="col-md-4 logo"></div>
             </a>
 
-                <div class="col-md-8">
+            <div class="col-md-8">
                 <div class="row bg-color-name-title">
                     <div class="heading">
                         <h1 class="name">Rosie Odenkirk</h1>
@@ -50,19 +61,19 @@
             </div>
         </div>
     </header>
-    <section class ="container-fuild">
-        <div class = "row bg-color-contact">
+    <section class="container-fuild">
+        <div class="row bg-color-contact">
             <div>
-            <h3 class ="contact-heading uppercase text-center">got a project in mind?</h3>
-            <h5 class ="uppercase text-center">Lets work together!</h5>
+                <h3 class="contact-heading uppercase text-center">got a project in mind?</h3>
+                <h5 class="uppercase text-center">Lets work together!</h5>
             </div>
-            <div class ="center-form">
-                <form>
-                    <input type="text" name="name" class ="form-control" id ="fullname" placeholder="Name" required/>
-                    <input type="text" name="emailaddress" class ="form-control" id ="emailaddress" placeholder="Email" required/>
+            <div class="center-form">
+                <form onsubmit = "return sendMail(this);" method = "POST">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Desciption" required></textarea>
-                   <button type="submit" class ="btn btn-secondary center-block">Send Project Request</button>
-                    
+                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+
                 </form>
             </div>
         </div>
@@ -79,7 +90,7 @@
                 <h5 class="uppercase general-sub">Download My CV</h5>
                 <p class="inline-block">
                     Neew a printable version of my CV? Download it here
-                    <a href="Assets/cv/CV.pdf" target= "_blank" class="cv-pdf"><i class ="fa fa-download" aria-hidden="true"></i></a>
+                    <a href="Assets/cv/CV.pdf" target="_blank" class="cv-pdf"><i class ="fa fa-download" aria-hidden="true"></i></a>
                 </p>
             </div>
             <div class="col-sm-4">
@@ -96,6 +107,7 @@
         </div>
 
     </footer>
+    <script type="text/javascript" src="Assets/js/sendEmail.js"></script>
 </body>
 
 </html>
